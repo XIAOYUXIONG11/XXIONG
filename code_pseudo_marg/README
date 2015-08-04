@@ -1,0 +1,25 @@
+Summary
+-------
+
+This distribution contains code to reproduce the results in: 
+
+[1] M. Filippone and M. Girolami. Pseudo-Marginal Bayesian Inference for Gaussian Processes. IEEE Transactions on Pattern Analysis and Machine Intelligence. 2014. to appear.
+
+Folders contain the code to reproduce the results in the paper and have been named according to the corresponding result sections (with the only exception of folder section4.2 that contains code to obtain results presented in section 4.3). 
+
+Some details
+------------
+This distribution contains code to perform the fully Bayesian treatment of Gaussian Process classification using Markov chain Monte Carlo methods. 
+The folder "functions" contains funcions that are useful for all the different experiments
+
+The covariance of the GP prior can be ARD (diagonal) "D" or isotropic (hyperspherical) "H"
+
+Here is the list of relevant variables:
+X    	      input data
+y	      observed data
+f 	      latent variables
+psi.tau	      log length scales of the GP prior
+psi.sigma     log amplitude of the GP prior
+
+
+For experiments on real data, you first need to run the code under the DATA folder to create the folds and normalize the features to have zero mean and unit standard deviation.
